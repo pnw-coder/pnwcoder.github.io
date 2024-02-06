@@ -21,6 +21,7 @@ body {
     right: 0;
     width: auto;
     max-width: 80%;
+    background: linear-gradient(to bottom, #8a4eff, #ec91f5);
     color: #fff;
     padding: 10px 20px;
     display: flex;
@@ -47,11 +48,13 @@ body {
 
 .content-container {
     padding: 20px;
+    display: flex;
 }
 
 .about-section {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .left-section {
@@ -60,6 +63,7 @@ body {
 
 .right-section {
     width: 15%;
+    margin-left: 20px;
 }
 
 .right-section img {
@@ -67,4 +71,13 @@ body {
     height: auto;
     float: right;
     margin-top: 10px;
+}
+
+@media(max-width: 600px) {
+    .navbar {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        top: auto;
+    }
 }

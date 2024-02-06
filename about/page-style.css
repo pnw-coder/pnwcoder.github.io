@@ -47,5 +47,34 @@ body {
 }
 
 .content-container {
-    
+    text-align: justify;
+    margin-right: 25%;
+}
+
+#tech-photo {
+    width: 300px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+#gaming-photo {
+    width: 300px;
+    height: auto;
+    float: right;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.content-container p:last-child {
+    margin-right: 20px;
+}
+
+@media(max-width: 600px) {
+    .navbar {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        top: auto;
+    }
 }

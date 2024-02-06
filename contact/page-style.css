@@ -64,4 +64,26 @@ body {
 
 #my-list {
     padding: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#email:hover {
+    transform: scale(1.1);
+}
+
+#github:hover {
+    transform: scale(1.1);
+}
+
+#linkedin:hover {
+    transform: scale(1.1);
+}
+
+@media(max-width: 600px) {
+    .navbar {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        top: auto;
+    }
 }

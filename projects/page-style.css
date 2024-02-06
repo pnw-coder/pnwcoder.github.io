@@ -47,5 +47,24 @@ body {
 }
 
 .content-container {
-    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-right: 25%;
+}
+
+.grid-box {
+    border: 3px #c576ff solid;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media(max-width: 600px) {
+    .navbar {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        top: auto;
+    }
 }
